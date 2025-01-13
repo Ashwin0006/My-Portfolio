@@ -1,0 +1,120 @@
+*{
+    font-family: "Playwrite AU SA", serif;
+    font-optical-sizing: auto;
+    font-weight: 20;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url('space.gif');
+    margin: 0;
+    /* height: 100vh; */
+}
+
+nav{
+    height: 7em;
+    background-image: linear-gradient(to right, rgb(7, 7, 7), rgb(66, 65, 65));
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-left: 12px;
+    display: flex;
+    opacity: 0.9;
+    /* border-style: solid;
+    border-color: silver; */
+
+    border-bottom-style: solid;
+    border-bottom-color: silver;
+}
+
+#name{
+    flex-grow: 1;
+    color: aqua;
+    /* color: rgb(34, 0, 255); */
+}
+
+
+.top-boxes{
+    margin-right: 15px;
+    padding: 5px;
+
+    a{
+        color: silver;
+    }
+
+    a:hover{
+        color:gold;
+    }
+}
+
+.top-boxes:hover{
+    background-color: rgb(65, 65, 65);
+    color: gold;
+    border-radius: 14px;
+}
+
+.hello-box{
+    color: gold;
+    border-style: solid;
+    border-color: silver;
+    border-radius: 14px;
+    background-color:rgba(101, 100, 100, 0.6);
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 30px;
+}
+
+.hello-box h4{
+    color: honeydew;
+}
+
+.go-to-nxt{
+    font-size: 30px; 
+    padding: 10px 20px; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 5px;
+    margin-left: 42%;
+    border-style: solid;
+}
+
+.go-to-nxt:hover {
+    color: gold;
+    background-color: rgba(8, 8, 8, 0.6);
+}
+
+.project-sec{
+    background-color: rgba(78, 77, 77, 0.4);
+    border-style: solid;
+    border-color:azure;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-bottom: 30px;  
+}
+
+.projectTile{
+    margin-bottom: 20px;
+    p{
+        color:white;
+    }
+}
+
+.project-link{
+    color: silver;
+    text-decoration: none;
+}
+
+
+
