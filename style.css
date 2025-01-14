@@ -9,31 +9,42 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
-    background-image: url('space.gif');
+body {
+    background-image: url('resources/space.gif');
     margin: 0;
-    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-nav{
-    height: 7em;
+nav {
     background-image: linear-gradient(to right, rgb(7, 7, 7), rgb(66, 65, 65));
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
-    padding-bottom: 0;
-    padding-top: 0;
-    padding-left: 12px;
+    padding: 0 12px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
     opacity: 0.9;
-    /* border-style: solid;
-    border-color: silver; */
+    border-bottom: 1px solid silver;
+}
 
-    border-bottom-style: solid;
-    border-bottom-color: silver;
+@media screen and (max-width: 500px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .top-boxes {
+        flex-grow: 1;
+        text-align: center;
+    }
 }
 
 #name{
-    flex-grow: 1;
+    flex-grow: 2;
     color: aqua;
     /* color: rgb(34, 0, 255); */
 }
@@ -66,8 +77,8 @@ nav{
     background-color:rgba(101, 100, 100, 0.6);
     padding: 10px;
     margin-top: 50px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-bottom: 30px;
 }
 
@@ -81,8 +92,11 @@ nav{
     color: white; 
     text-decoration: none; 
     border-radius: 5px;
-    margin-left: 42%;
     border-style: solid;
+
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .go-to-nxt:hover {
@@ -99,8 +113,8 @@ nav{
     padding-bottom: 20px;
     padding-right: 20px;
     margin-top: 50px;
-    margin-left: 140px;
-    margin-right: 140px;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-bottom: 30px;  
 }
 
