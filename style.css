@@ -18,6 +18,10 @@ body {
     justify-content: flex-start;
 }
 
+body::-webkit-scrollbar {
+    display: none; 
+}
+
 nav {
     background-image: linear-gradient(to right, rgb(7, 7, 7), rgb(66, 65, 65));
     border-bottom-left-radius: 12px;
@@ -30,22 +34,67 @@ nav {
     box-sizing: border-box;
     opacity: 0.9;
     border-bottom: 2px solid gold;
+    /* position: fixed; 
+    position: sticky;
+    top: 0px; */
 }
+
+nav .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 0.3rem;
+    background: none;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: aqua;
+    color: aqua;
+}
+  
 
 @media screen and (max-width: 500px) {
     nav {
-        flex-wrap: wrap;
+        background-image: linear-gradient(to bottom, rgb(7, 7, 7), rgb(66, 65, 65));
+        display: block;
+    }
+
+    nav .mainName{
+        display: flex;
+        justify-content: center;
+    }
+
+    .hamburger {
+        display: block;
+        margin-bottom: 2px;
+        margin: 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hamBox {
+        display: flex;
         justify-content: center;
     }
 
     .top-boxes {
-        flex-grow: 1;
-        text-align: center;
+        display: none;
     }
 }
 
-#name {
-    flex-grow: 2;
+.mainName {
+    flex-grow: 1;
     color: aqua;
     /* color: rgb(34, 0, 255); */
 }
@@ -71,11 +120,11 @@ nav {
 }
 
 .hello-box {
-    color: gold;
+    color: yellowgreen;
     border-style: solid;
-    border-color: silver;
+    border-color: gold;
     border-radius: 14px;
-    background-color: rgba(101, 100, 100, 0.6);
+    background-color: rgba(101, 100, 100, 0.5);
     padding: 10px;
     margin-top: 50px;
     margin-left: 20%;
@@ -83,7 +132,16 @@ nav {
     margin-bottom: 30px;
 }
 
+.hello-box:hover {
+    background-image: linear-gradient(rgba(34, 253, 34, 0.2), rgba(192, 192, 192, 0.2));
+    color: aqua;
+}
+
 .hello-box h4 {
+    color: aquamarine;
+}
+
+.hello-box h4:hover {
     color: honeydew;
 }
 
@@ -108,7 +166,7 @@ nav {
 .project-sec {
     background-color: rgba(78, 77, 77, 0.4);
     border-style: solid;
-    border-color: azure;
+    border-color: gold;
     border-radius: 20px;
     padding-left: 20px;
     padding-bottom: 20px;
@@ -155,14 +213,14 @@ nav {
 .skill-sec {
     display: flex;
     flex-wrap: wrap;
-    border-style: solid;
-    border-color: antiquewhite;
+    border-style: double;
+    border-color: gold;
     border-radius: 13px;
-    background-color: rgba(125, 125, 125, 0.3);
-    margin-left: 13%;
-    margin-right: 13%;
-    margin-top: 14px;
-    padding: 10px;
+    background-color: rgba(241, 241, 241, 0.3);
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 30px;
+    padding: 5px;
 }
 
 .float-image {
@@ -170,7 +228,10 @@ nav {
     max-height: 100px;
     width: auto;
     height: auto;
-    margin: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    margin-top: 15px;
 }
 
 .exp-box {

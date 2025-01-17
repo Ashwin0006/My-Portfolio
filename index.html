@@ -14,33 +14,50 @@
 
 <body>
     <nav>
-        <h1 id="name">
-            😊 Ashwin Kumar. S
-            <br>
-            🌐 <a style="color: aqua" href="https://github.com/Ashwin0006" target="_blank">GitHub</a> | <a style="color: aqua" href="https://www.linkedin.com/in/ashwin-kumar-18872327a/" target="_blank">LinkedIn</a>
-        </h1>
+        <div style="display: block;">
+            <div class="mainName">
+                <h1 id="name">
+                    😊 Ashwin Kumar. S
+                    <br>
+                    🌐 <a style="color: aqua" href="https://github.com/Ashwin0006" target="_blank">GitHub</a> | <a style="color: aqua" href="https://www.linkedin.com/in/ashwin-kumar-18872327a/" target="_blank">LinkedIn</a>
+                </h1>
+            </div>
+        </div>
 
-        <div class="top-boxes">
-            <h1>
-                <a href="#projects" style="text-decoration: none">
-                    Projects
-                </a>
-            </h1>
+        <div class="hamBox">
+            <button id="hamburger" class="hamburger" aria-expanded="false">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
         </div>
-        <div class="top-boxes">
-            <h1>
-                <a href="#skills" style="text-decoration: none">
-                    Skills
-                </a>
-            </h1>
+        
+        <div class="nav-links" id="navlinks">
+            <div class="top-boxes" id="project_link">
+                <h1>
+                    <a href="#projects" style="text-decoration: none">
+                        Projects
+                    </a>
+                </h1>
+            </div>
+            
+            <div class="top-boxes" id="skill_link">
+                <h1>
+                    <a href="#skills" style="text-decoration: none">
+                        Skills
+                    </a>
+                </h1>
+            </div>
+
+            <div class="top-boxes" id="contact_link">
+                <h1>
+                    <a href="#socials" style="text-decoration: none">
+                        Contact Me
+                    </a>
+                </h1>
+            </div>
         </div>
-        <div class="top-boxes">
-            <h1>
-                <a href="#socials" style="text-decoration: none">
-                    Contact Me
-                </a>
-            </h1>
-        </div>
+
     </nav>
 
 
@@ -163,30 +180,35 @@
         <hr>
 
         <div class="skill-sec" id="skill-sec">
+            <img src="resources/python.svg" class="float-image">
             <img src="resources/c-plusplus.svg" class="float-image">
+            <img src="resources/java.svg" class="float-image">
+            <img src="resources/html-5.svg" class="float-image">
             <img src="resources/css-3.svg" class="float-image">
+            <img src="resources/flutter.svg" class="float-image">
             <img src="resources/firebase.svg" class="float-image">
             <img src="resources/flask.svg" class="float-image">
-            <img src="resources/flutter.svg" class="float-image">
-            <img src="resources/html-5.svg" class="float-image">
-            <img src="resources/java.svg" class="float-image">
+            <img src="resources/qt.svg" class="float-image">
             <img src="resources/javascript.svg" class="float-image">
             <img src="resources/kotlin-icon.svg" class="float-image">
             <img src="resources/mysql.svg" class="float-image">
             <img src="resources/nextjs-icon.svg" class="float-image">
             <img src="resources/nodejs.svg" class="float-image">
+            <img src="resources/tensorflow.svg  " class="float-image">
+            <img src="resources/pytorch.svg" class="float-image">
             <img src="resources/oracle.svg" class="float-image">
-            <img src="resources/python.svg" class="float-image">
-            <img src="resources/qt.svg" class="float-image">
             <img src="resources/react.svg" class="float-image">
+            <img src="resources/tailwindcss-icon.svg" class="float-image">
             <img src="resources/sass.svg" class="float-image">
             <img src="resources/supabase-icon.svg" class="float-image">
-            <img src="resources/tailwindcss-icon.svg" class="float-image">
+            <img src="resources/android.svg" class="float-image">
+            <img src="resources/wearos.svg" class="float-image">
+            <img src="resources/mongodb.svg" class="float-image">
         </div>
 
         <hr style="margin-top: 50px;">
         <center>
-            <h1 style="color:rgb(255, 0, 0);">
+            <h1 style="color:fuchsia;">
                 Experience
             </h1>
         </center>
@@ -262,6 +284,8 @@
           </div>
         </div>
       </footer>
+
+      <script src="hamBurger.js"></script>
     
 </body>
 
