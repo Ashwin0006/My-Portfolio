@@ -9,6 +9,48 @@ html {
     scroll-behavior: smooth;
 }
 
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("resources/space.gif");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.star-loader {
+    width: 100px;
+    height: 100px;
+}
+
+.star-path {
+    fill: none; 
+    stroke: gold;
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-dasharray: 300; 
+    stroke-dashoffset: 300;
+    animation: loading-bar 4s linear infinite;
+}
+
+@keyframes loading-bar {
+    0% {
+        stroke-dashoffset: 300; 
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#main-content {
+    visibility: hidden;
+}
+
 body {
     background-image: url('resources/space.gif');
     margin: 0;
@@ -19,7 +61,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-    display: none; 
+    display: none;
 }
 
 nav {
@@ -58,7 +100,7 @@ nav .nav-links {
     background-color: aqua;
     color: aqua;
 }
-  
+
 
 @media screen and (max-width: 500px) {
     nav {
@@ -66,7 +108,7 @@ nav .nav-links {
         display: block;
     }
 
-    nav .mainName{
+    nav .mainName {
         display: flex;
         justify-content: center;
     }
@@ -238,7 +280,7 @@ nav .nav-links {
         opacity: 0;
         transform: translateY(10px);
         transition: opacity 3s ease, transform 3s ease;
-    }   
+    }
 
     .projectTile:hover .project-content {
         visibility: visible;
@@ -271,6 +313,7 @@ nav .nav-links {
     .projectTile_alternate .project-img-container {
         transition: transform 0.7s ease-in-out;
     }
+
     .projectTile_alternate:hover .project-img-container {
         transform: translateX(25%);
     }
@@ -282,10 +325,10 @@ nav .nav-links {
     .project-img {
         max-height: 40vh;
         max-width: 40vh;
-    
+
         height: auto;
         width: auto;
-    
+
         margin-top: 10px;
     }
 
@@ -294,7 +337,7 @@ nav .nav-links {
         flex-direction: column;
     }
 
-    .project-thumbnail .project-img-container{
+    .project-thumbnail .project-img-container {
         order: 2;
     }
 
@@ -444,7 +487,8 @@ nav .nav-links {
     flex-direction: column;
 }
 
-.form-content input, .form-content textarea {
+.form-content input,
+.form-content textarea {
     margin: 10px 0;
     padding: 8px;
     border-radius: 4px;
@@ -471,4 +515,3 @@ button[type="submit"] {
     background-color: green;
     color: white;
 }
-
